@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Smiles </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <script src="app.js"></script>
+</head>
+<html><head></head><body>Missing required parameter; Client_id</body></html>
+
+<body>
+    <button onclick="authorizeSpotify()">Authorize with spotify</button>
+    <script> function authorizeSpotify(){
+        const ClientId = '7c775fb3a5b04fe388364f9aafb354e2'; 
+        const redirectUri = 'https://github.com/git-Angel06/Smiles.git'; 
+        const scopes = '&scape=user-read-private user-read-email user-modify-playback-state user-read-playback-position user-library-read user-read-playback-state user-read-recently-played playlist-read-private playlist-read-private playlist-read-collaborative playlist-modify-private playlist-modify-pub';
+        const authUrl = 'https://accounts.spotify.com/authorize?client_id=${clientID}&response_type=code&redirect_uri=${encodeURIComponent(redirectUri)}&scope=${encodeURIComponent(scopes)}';
+        window.location.href = authUrl;
+    }
+     </script>
+    </body>
+    </html>
+     
+<body>
+  <meta charset="utf-8">
+  <title>Spotify Auth API</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Montserrat+Subrayada|Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="log-in">
+    <!-- <h1>Create a playlist</h1> -->
+
+    <button id="logInBtn" class="btn btn-default" type="button" name="button"><a href="https://accounts.spotify.com/authorize?client_id=659f2e7b21a94d6a9ea765d559fa58a4&redirect_uri=http://localhost:8080&scope=user-read-private%20user-read-email&response_type=token&state=123">
+  </div>
