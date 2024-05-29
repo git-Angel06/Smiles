@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Playlist</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generate Your Playlist</h1>
+        
+        <label for="self-mood">Self Mood:</label>
+        <input type="text" id="self-mood" name="self-mood"><br><br>
+        
+        <label for="music-mood">Music Mood:</label>
+        <input type="text" id="music-mood" name="music-mood"><br><br>
+        
+        <button id="next-button">Next</button>
+        
+        <div id="selection-section" class="hidden">
+            <h2>Select Song Type</h2>
+            <label for="song-type">Type of Songs:</label>
+            <select id="song-type" name="song-type">
+                <option value="known">Known Songs</option>
+                <option value="recommended">Recommended Songs</option>
+                <option value="mix">Mix</option>
+            </select><br><br>
+            <button id="generate-button">Generate Playlist</button>
+        </div>
+        
+        <div id="playlist-section" class="hidden">
+            <h2>Your Playlist: <span id="playlist-title"></span></h2>
+            <ul id="playlist"></ul>
+            <button id="save-button">Save Playlist</button>
+            <button id="delete-button">Delete Playlist</button>
+        </div>
+  
+
+    <script src="script.js"></script>
+</body>
+</html>
